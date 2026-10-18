@@ -1,0 +1,8 @@
+# 使用真实 MySQL 时：mvn spring-boot:run -Dspring-boot.run.profiles=mysql
+# 先执行 src/main/resources/db/schema.sql 和 data.sql 建库建表
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/campus_library?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&useSSL=false
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
